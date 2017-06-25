@@ -2,7 +2,7 @@
 var mongoose = require('mongoose');
 
 //Set up default mongoose connection
-var mongoDB = 'mongodb://localhost:27017/leaveapp';
+var mongoDB = 'mongodb://dee:simran97@ds137882.mlab.com:37882/leaveapp';
 mongoose.connect(mongoDB);
 
 //Get the default connection
