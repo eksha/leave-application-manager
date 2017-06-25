@@ -9,12 +9,12 @@ Run `node start` or `node server.js`
 ## Employee API
 ### 1. Get details of previous applications
 
-https://localhost:8092/username  
+http://localhost:8092/username  
 This returns json array of all the leave applications previously submitted. _username_ is the username field from _User_ collection. 
 
 ### 2. Submit new leave application 
 **POST request URL**  
-https://localhost:8092/username  
+http://localhost:8092/username  
 The request body must contain leave schema as:
 ```
 {
@@ -29,13 +29,13 @@ The request body must contain leave schema as:
 ## Manager API
 ### 1. Review all the leave applications  
 **GET request URL**  
-https://localhost:8092/username   
+http://localhost:8092/username   
 This  request returns all the leave applications in the system.   
 
 ### 2. Approve a leave application
 
 **PUT request URL**  
-https://localhost:8092/username/leaveId
+http://localhost:8092/username/leaveId
 
 This request will change the _approvalStatus_ of leave application with _\_id_ as _leaveId_  to true. The default _approvalStatus_ is false. 
 
