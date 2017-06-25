@@ -16,7 +16,7 @@ app.get('/:username/',function(req,res){
         res.json({code:-1,message:"Could not retrieve Leave Applications"});
       }
       //if not registered user, don't allow access
-      if(doc.length<1){
+      if(doc===null){
         console.log("Unauthentic User");
         res.json({code:-1,message:"Unauthentic Username!"});
       }
